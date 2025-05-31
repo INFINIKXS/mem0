@@ -6,10 +6,10 @@ from google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint impo
     Namespace,
 )
 
-from mem0.configs.vector_stores.vertex_ai_vector_search import (
+from mem011.configs.vector_stores.vertex_ai_vector_search import (
     GoogleMatchingEngineConfig,
 )
-from mem0.vector_stores.vertex_ai_vector_search import GoogleMatchingEngine
+from mem011.vector_stores.vertex_ai_vector_search import GoogleMatchingEngine
 
 
 @pytest.fixture

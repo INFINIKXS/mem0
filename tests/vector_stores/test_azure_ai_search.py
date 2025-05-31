@@ -4,10 +4,10 @@ from unittest.mock import MagicMock, Mock, patch
 import pytest
 from azure.core.exceptions import HttpResponseError
 
-from mem0.configs.vector_stores.azure_ai_search import AzureAISearchConfig
+from mem011.configs.vector_stores.azure_ai_search import AzureAISearchConfig
 
 # Import the AzureAISearch class and related models
-from mem0.vector_stores.azure_ai_search import AzureAISearch
+from mem011.vector_stores.azure_ai_search import AzureAISearch
 
 
 # Fixture to patch SearchClient and SearchIndexClient and create an instance of AzureAISearch.

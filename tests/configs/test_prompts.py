@@ -1,4 +1,4 @@
-from mem0.configs import prompts
+from mem011.configs import prompts
 
 
 def test_get_update_memory_messages():

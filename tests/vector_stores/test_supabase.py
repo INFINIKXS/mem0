@@ -2,8 +2,8 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from mem0.configs.vector_stores.supabase import IndexMeasure, IndexMethod
-from mem0.vector_stores.supabase import Supabase
+from mem011.configs.vector_stores.supabase import IndexMeasure, IndexMethod
+from mem011.vector_stores.supabase import Supabase
 
 
 @pytest.fixture

@@ -5,7 +5,7 @@ from unittest.mock import MagicMock
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, PointIdsList, PointStruct, VectorParams
 
-from mem0.vector_stores.qdrant import Qdrant
+from mem011.vector_stores.qdrant import Qdrant
 
 
 class TestQdrant(unittest.TestCase):

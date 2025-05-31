@@ -10,7 +10,7 @@ try:
 except ImportError:
     raise ImportError("OpenSearch requires extra dependencies. Install with `pip install opensearch-py`") from None
 
-from mem0.vector_stores.opensearch import OpenSearchDB
+from mem011.vector_stores.opensearch import OpenSearchDB
 
 
 class TestOpenSearchDB(unittest.TestCase):

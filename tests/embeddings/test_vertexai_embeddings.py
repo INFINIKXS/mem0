@@ -2,7 +2,7 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from mem0.embeddings.vertexai import VertexAIEmbedding
+from mem011.embeddings.vertexai import VertexAIEmbedding
 
 
 @pytest.fixture

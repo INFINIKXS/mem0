@@ -2,8 +2,8 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from mem0.configs.llms.base import BaseLlmConfig
-from mem0.llms.lmstudio import LMStudioLLM
+from mem011.configs.llms.base import BaseLlmConfig
+from mem011.llms.lmstudio import LMStudioLLM
 
 
 @pytest.fixture

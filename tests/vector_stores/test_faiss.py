@@ -6,7 +6,7 @@ import faiss
 import numpy as np
 import pytest
 
-from mem0.vector_stores.faiss import FAISS, OutputData
+from mem011.vector_stores.faiss import FAISS, OutputData
 
 
 @pytest.fixture

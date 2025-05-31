@@ -199,6 +199,64 @@ for await (const textPart of textStream) {
 }
 ```
 
+## Using Mem0 with Gemini (Google LLM)
+
+You can use Mem0 with Google's Gemini models by setting the provider to `google` and specifying your Gemini API key. Follow these steps:
+
+### 1. Install Dependencies
+
+```bash
+npm install @mem0/vercel-ai-provider ai
+```
+
+### 2. Set Up Your API Keys
+- Get your [Google Gemini API key](https://ai.google.dev/gemini-api/docs/get-api-key).
+- Get your [Mem0 API key](https://app.mem0.ai/dashboard/api-keys).
+- (Recommended) Set them as environment variables:
+  - `GOOGLE_API_KEY` for Gemini
+  - `MEM0_API_KEY` for Mem0
+
+### 3. Example Usage
+
+```typescript
+import { generateText } from "ai";
+import { createMem0 } from "@mem0/vercel-ai-provider";
+
+const mem0 = createMem0({
+  provider: "google",
+  apiKey: process.env.GOOGLE_API_KEY || "your-google-api-key",
+  mem0ApiKey: process.env.MEM0_API_KEY || "m0-xxx",
+  mem0Config: {
+    user_id: "your-user-id"
+  }
+});
+
+// Use a Gemini model name, e.g., "gemini-2.5-pro-preview-05-06"
+const { text } = await generateText({
+  // @ts-ignore
+  model: mem0("gemini-2.5-pro-preview-05-06"),
+  messages: [
+    {
+      role: "user",
+      content: [
+        { type: "text", text: "Suggest me a good car to buy." },
+        { type: "text", text: "Write only the car name and its color." },
+      ],
+    },
+  ],
+});
+
+console.log(text);
+```
+
+### 4. Tips
+- You can use any supported Gemini model name in the `model` call.
+- Memories will be retrieved and used as context just like with OpenAI.
+- If you use environment variables, make sure your runtime (e.g., Vercel, Node.js) loads them correctly.
+- For more details, see the [Google provider test example](./tests/mem0-provider-tests/mem0-google.test.ts).
+
+---
+
 ## Core Functions
 
 - `createMem0()`: Initializes a new mem0 provider instance with optional configuration

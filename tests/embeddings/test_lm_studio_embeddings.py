@@ -2,8 +2,8 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from mem0.configs.embeddings.base import BaseEmbedderConfig
-from mem0.embeddings.lmstudio import LMStudioEmbedding
+from mem011.configs.embeddings.base import BaseEmbedderConfig
+from mem011.embeddings.lmstudio import LMStudioEmbedding
 
 
 @pytest.fixture

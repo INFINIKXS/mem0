@@ -9,7 +9,7 @@ try:
 except ImportError:
     raise ImportError("Elasticsearch requires extra dependencies. Install with `pip install elasticsearch`") from None
 
-from mem0.vector_stores.elasticsearch import ElasticsearchDB, OutputData
+from mem011.vector_stores.elasticsearch import ElasticsearchDB, OutputData
 
 
 class TestElasticsearchDB(unittest.TestCase):

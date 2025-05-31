@@ -4,8 +4,8 @@ import pytest
 from google.generativeai import GenerationConfig
 from google.generativeai.types import content_types
 
-from mem0.configs.llms.base import BaseLlmConfig
-from mem0.llms.gemini import GeminiLLM
+from mem011.configs.llms.base import BaseLlmConfig
+from mem011.llms.gemini import GeminiLLM
 
 
 @pytest.fixture

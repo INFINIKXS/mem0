@@ -2,7 +2,7 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from mem0.vector_stores.chroma import ChromaDB
+from mem011.vector_stores.chroma import ChromaDB
 
 
 @pytest.fixture

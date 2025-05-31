@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, call, patch
 
 import pytest
 
-from mem0.vector_stores.upstash_vector import UpstashVector
+from mem011.vector_stores.upstash_vector import UpstashVector
 
 
 @dataclass

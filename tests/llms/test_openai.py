@@ -3,8 +3,8 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from mem0.configs.llms.base import BaseLlmConfig
-from mem0.llms.openai import OpenAILLM
+from mem011.configs.llms.base import BaseLlmConfig
+from mem011.llms.openai import OpenAILLM
 
 
 @pytest.fixture

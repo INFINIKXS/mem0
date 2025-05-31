@@ -3,7 +3,7 @@ from unittest.mock import Mock, patch
 import pytest
 from langchain_community.vectorstores import VectorStore
 
-from mem0.vector_stores.langchain import Langchain
+from mem011.vector_stores.langchain import Langchain
 
 
 @pytest.fixture

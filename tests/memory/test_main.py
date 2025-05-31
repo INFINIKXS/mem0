@@ -3,7 +3,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from mem0.memory.main import AsyncMemory, Memory
+from mem011.memory.main import AsyncMemory, Memory
 
 
 def _setup_mocks(mocker):

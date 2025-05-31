@@ -2,8 +2,8 @@ from unittest.mock import patch
 
 import pytest
 
-from mem0.configs.embeddings.base import BaseEmbedderConfig
-from mem0.embeddings.gemini import GoogleGenAIEmbedding
+from mem011.configs.embeddings.base import BaseEmbedderConfig
+from mem011.embeddings.gemini import GoogleGenAIEmbedding
 
 
 @pytest.fixture

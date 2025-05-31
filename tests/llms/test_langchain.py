@@ -2,8 +2,8 @@ from unittest.mock import Mock
 
 import pytest
 
-from mem0.configs.llms.base import BaseLlmConfig
-from mem0.llms.langchain import LangchainLLM
+from mem011.configs.llms.base import BaseLlmConfig
+from mem011.llms.langchain import LangchainLLM
 
 # Add the import for BaseChatModel
 try:

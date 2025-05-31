@@ -3,8 +3,8 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from mem0.configs.base import MemoryConfig
-from mem0.memory.main import Memory
+from mem011.configs.base import MemoryConfig
+from mem011.memory.main import Memory
 
 
 @pytest.fixture(autouse=True)

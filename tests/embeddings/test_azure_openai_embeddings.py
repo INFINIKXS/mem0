@@ -2,8 +2,8 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from mem0.configs.embeddings.base import BaseEmbedderConfig
-from mem0.embeddings.azure_openai import AzureOpenAIEmbedding
+from mem011.configs.embeddings.base import BaseEmbedderConfig
+from mem011.embeddings.azure_openai import AzureOpenAIEmbedding
 
 
 @pytest.fixture

@@ -2,8 +2,8 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from mem0.configs.llms.base import BaseLlmConfig
-from mem0.llms.azure_openai import AzureOpenAILLM
+from mem011.configs.llms.base import BaseLlmConfig
+from mem011.llms.azure_openai import AzureOpenAILLM
 
 MODEL = "gpt-4o"  # or your custom deployment name
 TEMPERATURE = 0.7
